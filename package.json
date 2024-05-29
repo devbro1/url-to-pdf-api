@@ -7,7 +7,8 @@
     "node": "10.x.x"
   },
   "scripts": {
-    "start": "env-cmd nodemon --watch ./src -e js src/index.js",
+    "start": "node ./src/index.js",
+    "dev": "env-cmd nodemon --watch ./src -e js src/index.js",
     "test": "mocha --timeout 10000 && npm run lint",
     "lint": "eslint ."
   },
@@ -33,7 +34,7 @@
     "morgan": "^1.9.1",
     "normalize-url": "^5.0.0",
     "pdf-parse": "^1.1.1",
-    "puppeteer": "^2.0.0",
+    "puppeteer": "^22.10.0",
     "server-destroy": "^1.0.1",
     "winston": "^2.3.1"
   },
